@@ -8,7 +8,7 @@ import { useFonts,
          Montserrat_400Regular,
          Montserrat_700Bold } from '@expo-google-fonts/montserrat'
 // mock
-import mock from './src/mock/cart';
+import mock from './src/mock/cartData';
 
 
 export default function App() {
