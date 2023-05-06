@@ -1,5 +1,5 @@
 import { StatusBar, SafeAreaView, View, Text } from 'react-native';
-import { Cesta } from './src/screens';
+import { Cart } from './src/screens';
 //intl
 import 'intl';
 import 'intl/locale-data/jsonp/pt-BR';
@@ -24,6 +24,6 @@ export default function App() {
 
   return <SafeAreaView>
   <StatusBar/>
-  <Cesta/>
+  <Cart/>
   </SafeAreaView>;
 }
