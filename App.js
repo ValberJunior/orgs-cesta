@@ -1,4 +1,4 @@
-import { StatusBar, SafeAreaView, View, Text } from 'react-native';
+import { StatusBar, SafeAreaView, Text } from 'react-native';
 import { Cart } from './src/screens';
 //intl
 import 'intl';
@@ -9,7 +9,12 @@ import { useFonts,
          Montserrat_700Bold } from '@expo-google-fonts/montserrat'
 // mock
 import mock from './src/mock/cartData';
+//Expo SplashScreen
+import * as SplashScreen from 'expo-splash-screen';
+import { useCallback } from 'react';
 
+//init splashscreen
+SplashScreen.preventAutoHideAsync();
 
 export default function App() {
 
@@ -18,14 +23,17 @@ export default function App() {
    "MontserratBold": Montserrat_700Bold
   });
 
+  const onLayoutRootView = useCallback(async () => {
+    if (fontLoaded) {
+      await SplashScreen.hideAsync();
+    }
+  }, [fontLoaded]);
+
   if(!fontLoaded){
-    return <View>
-      {/* Podemos colocar uma animacao ou um skeleton */}
-      <Text>Carregando ...</Text>
-    </View>
+    return null;
   }
 
-  return <SafeAreaView>
+  return <SafeAreaView onLayout={onLayoutRootView}>
   <StatusBar/>
   <Cart {...mock} />
   </SafeAreaView>;
