@@ -7,6 +7,9 @@ import 'intl/locale-data/jsonp/pt-BR';
 import { useFonts,
          Montserrat_400Regular,
          Montserrat_700Bold } from '@expo-google-fonts/montserrat'
+// mock
+import mock from './src/mock/cart';
+
 
 export default function App() {
 
@@ -24,6 +27,6 @@ export default function App() {
 
   return <SafeAreaView>
   <StatusBar/>
-  <Cart/>
+  <Cart {...mock} />
   </SafeAreaView>;
 }
