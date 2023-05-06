@@ -14,7 +14,6 @@ export default StyleSheet.create({
         textAlign: 'center',
         fontSize: 16,
         lineHeight: 26,
-        fontWeight: 'bold',
         color: '#fff',
         padding: 16
     },
@@ -25,8 +24,7 @@ export default StyleSheet.create({
     name:{
         color: '#464646',
         fontSize: 26,
-        lineHeight: 42,
-        fontFamily: 'MontserratBold'
+        lineHeight: 42
     },
     header:{
         flexDirection: 'row',
@@ -40,13 +38,11 @@ export default StyleSheet.create({
         fontSize: 16,
         lineHeight: 26,
         marginLeft: 12,
-        fontFamily: 'MontserratRegular'
     },
     description:{
         color: '#A3A3A3',
         fontSize: 16,
         lineHeight: 26,
-        fontFamily: 'MontserratRegular'
     },
     price:{
         color: '#2A9F85',
