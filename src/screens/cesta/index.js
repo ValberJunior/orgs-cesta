@@ -1,14 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { Text, View } from 'react-native';
-import globalStyles from '../../styles/global';
+import { Image, Text } from 'react-native';
+import Topo from '../../../assets/topo.png';
+import styles from './styles';
 
 const Cesta = () => {
   return (
-    <View style={[globalStyles.container]}>
-        <StatusBar style="auto" />
-        <Text>Cesta</Text>
-    </View>
+    <>
+      <Image 
+        source={Topo}
+        style={styles.topo}
+        />
+        <Text 
+          style={styles.title}>
+            Detalhe da Cesta
+        </Text>
+    </>
   )
 }
 
