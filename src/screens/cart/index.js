@@ -3,12 +3,12 @@ import { WrapperComponent } from '../../components';
 import Top from './top';
 import Details from './details';
 
-const Cart = () => {
+const Cart = ({top, details}) => {
   return (
     <>
-        <Top/>
+        <Top {...top}/>
         <WrapperComponent>
-         <Details/>
+         <Details {...details}/>
         </WrapperComponent>
     </>
   )

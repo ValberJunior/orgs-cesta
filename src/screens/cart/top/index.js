@@ -1,20 +1,19 @@
 import React from 'react';
-import TopImg from '../../../../assets/topo.png';
 import styles from './styles';
 import { Image } from 'react-native';
 import { TextComponent } from '../../../components';
 
-const Top = () => {
+const Top = ({background,title}) => {
   return (
     <>
     <Image 
-        source={TopImg}
+        source={background}
         style={styles.top}
         />
         <TextComponent 
           bold
           style={styles.title}>
-            Detalhe da Cesta
+         {title}
         </TextComponent>
     </>
   )
