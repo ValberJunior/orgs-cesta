@@ -23,24 +23,24 @@ const cartData = {
         title: "Itens da cesta",
         list: [
             {
-                nome: "Tomate",
-                imagem: tomate,
+                name: "Tomate",
+                image: tomate,
             },
             {
-                nome: "Brócolis",
-                imagem: brocolis,
+                name: "Brócolis",
+                image: brocolis,
             },
             {
-                nome: "Batata",
-                imagem: batata,
+                name: "Batata",
+                image: batata,
             },
             {
-                nome: "Pepino",
-                imagem: pepino,
+                name: "Pepino",
+                image: pepino,
             },
             {
-                nome: "Abóbora",
-                imagem: abobora,
+                name: "Abóbora",
+                image: abobora,
             }
         ]
     }
