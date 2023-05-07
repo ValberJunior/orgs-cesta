@@ -31,5 +31,17 @@ export default StyleSheet.create({
         fontSize: 26,
         lineHeight: 42,
         marginTop:8
+    },
+    button:{
+        marginTop: 16,
+        backgroundColor: '#2A9F85',
+        paddingVertical: 16,
+        borderRadius: 6
+    },
+    labelButton:{
+        textAlign: 'center',
+        color: '#FFFFFF',
+        fontSize: 16,
+        lineHeight: 26
     }
 });

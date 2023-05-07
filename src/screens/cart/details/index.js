@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './styles';
 import { TextComponent } from '../../../components';
-import { Image, View } from 'react-native';
+import { TouchableOpacity, Image, View } from 'react-native';
 
-const Details = ({name,logo,label,description,price}) => {
+const Details = ({name,logo,label,description,price, button}) => {
 
   return (
     <>
@@ -23,6 +23,13 @@ const Details = ({name,logo,label,description,price}) => {
               }).format(price)
             }
           </TextComponent>
+      <TouchableOpacity 
+        style={styles.button} 
+        onPress={() => { }}>
+        <TextComponent bold style={styles.labelButton}>
+          {button}
+        </TextComponent>
+      </TouchableOpacity>
     </>
   )
 }

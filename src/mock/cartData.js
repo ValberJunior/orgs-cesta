@@ -16,7 +16,8 @@ const cartData = {
         logo: Logo,
         label: "Jenny Jack Farm",
         description: "Uma cesta com produtos selecionados cuidadosamente da fazenda direto para sua cozinha",
-        price: 40
+        price: 40,
+        button: "Comprar"
     },
     items: {
         title: "Itens da cesta",
