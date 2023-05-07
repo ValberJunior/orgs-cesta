@@ -1,15 +1,31 @@
 import React from 'react';
-import { WrapperComponent } from '../../components';
+import { TextComponent, WrapperComponent } from '../../components';
 import Top from './top';
 import Details from './details';
+import Items from './itemCard';
+import { FlatList } from 'react-native';
+import ItemCard from './itemCard';
+import styles from './styles';
 
-const Cart = ({top, details}) => {
+const Cart = ({top, details, items}) => {
   return (
     <>
-        <Top {...top}/>
-        <WrapperComponent>
-         <Details {...details}/>
-        </WrapperComponent>
+      <FlatList
+        data={items.list}
+        renderItem={({item})=> <ItemCard {...item}/>}
+        keyExtractor={({name})=> name}
+        ListHeaderComponent={
+          ()=> {
+            return <>
+                    <Top {...top}/>
+                    <WrapperComponent>
+                    <Details {...details} />
+                    <TextComponent bold style={styles.title}>{items.title}</TextComponent>
+                    </WrapperComponent>
+                  </>
+          }
+        }
+      />
     </>
   )
 }
