@@ -33,7 +33,10 @@ export default function App() {
     return null;
   }
 
-  return <SafeAreaView onLayout={onLayoutRootView}>
+  return <SafeAreaView 
+    onLayout={onLayoutRootView}
+    style={{ flex: 1  }}
+    >
   <StatusBar/>
   <Cart {...mock} />
   </SafeAreaView>;
