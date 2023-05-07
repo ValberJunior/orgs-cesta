@@ -2,7 +2,6 @@ import React from 'react';
 import { TextComponent, WrapperComponent } from '../../components';
 import Top from './top';
 import Details from './details';
-import Items from './itemCard';
 import { FlatList } from 'react-native';
 import ItemCard from './itemCard';
 import styles from './styles';
